@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guido96-lang.github.io/enogotti/sitemap.xml
