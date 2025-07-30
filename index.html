@@ -4,24 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enogotti | Distribuzione Bevande</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <title>Enogotti Distribuzione</title>
   <style>
-    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background-color: #fff; color: #111; }
-    header { background-color: #a01400; color: white; padding: 30px 20px; text-align: center; }
-    header img.logo { max-width: 120px; display: block; margin: 0 auto 15px; }
-    header h1 { font-size: 2.4em; margin-bottom: 10px; }
-    header p { font-size: 1.2em; }
-    nav { background-color: #7c0f00; color: white; padding: 12px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    h2 { color: #7c0f00; display: flex; align-items: center; gap: 10px; }
-    ul { line-height: 1.8; font-size: 1.05em; }
-    .cta { background-color: #f4f4f4; padding: 30px 20px; text-align: center; }
-    .cta a { background-color: #a01400; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; }
-    footer { background-color: #333; color: white; text-align: center; padding: 20px; }
-    .highlight-button { display: inline-block; margin-top: 20px; background-color: #a01400; color: white; padding: 15px 25px; font-weight: 600; border-radius: 6px; text-decoration: none; }
-    .catalogo-button { display: inline-block; margin-top: 25px; padding: 10px 20px; background-color: #7c0f00; color: #fff; font-weight: 600; text-decoration: none; border-radius: 6px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #111;
+    }
+    header {
+      background-color: #a01400;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
@@ -29,74 +32,34 @@
     <h1>EG - Enogotti Distribuzione</h1>
     <p>Bevande selezionate, consegnate con cura e puntualità</p>
   </header>
-  <nav>
-    <a href="#servizi">Servizi</a>
-    <a href="#catalogo">Catalogo</a>
-    <a href="#contatti">Contatti</a>
-  </nav>
-  <p style="background-color: #ffe4e1; padding: 12px; border-radius: 6px; font-weight: 600; color: #a01400; text-align: center;">
-    🚚 Servizio di consegna a domicilio disponibile anche per privati!
-  </p>
-  <section id="servizi">
-    <h2>I nostri servizi</h2>
-    <ul>
-      <li>📦 Consegne rapide a domicilio</li>
-      <li>🍷 Fornitura per ristoranti, bar, hotel e locali</li>
-      <li>📋 Consulenza nella scelta dei prodotti più adatti</li>
-    </ul>
-  </section>
-  <section id="catalogo">
-    <h2>I nostri prodotti</h2>
-    <ul>
-      <li>💧 Acque naturali e frizzanti</li>
-      <li>🥤 Bibite analcoliche in bottiglia e lattina</li>
-      <li>🍺 Birre artigianali e commerciali, in bottiglia e in fusto</li>
-      <li>🍷 Vini di alta qualità e selezione di vini sfusi</li>
-    </ul>
-    <a href="catalogo.pdf" class="catalogo-button" download>Scarica il nostro catalogo prodotti</a>
-  </section>
-  <section class="cta">
-    <h2>Contattaci subito</h2>
-    <a href="tel:034598272" class="highlight-button">📞 Chiama ora: 0345 982 72</a>
-  </section>
-  <section class="cta">
-    <h2>Acquista online</h2>
-    <p style="font-weight: 600;">Visita anche la nostra enoteca online:</p>
-    <a class="highlight-button" href="https://enogotti.it" target="_blank">enogotti.it</a>
+
+  <section style="padding: 40px 20px; text-align: center;">
+    <p>Benvenuto sul nostro sito! Scopri la nostra offerta di bevande per privati e professionisti.</p>
   </section>
 
-<section id="faq" style="padding: 40px 20px; max-width: 1000px; margin: auto;">
-  <h2 style="color:#7c0f00;">Domande Frequenti</h2>
+  <!-- CHI SIAMO sarà inserito qui -->
 
-  <h3>Fate consegne anche a privati?</h3>
-  <p>Sì, effettuiamo consegne a domicilio anche per privati, in tutta la provincia di Bergamo.</p>
-
-  <h3>Posso ordinare anche senza partita IVA?</h3>
-  <p>Certo! I nostri servizi sono disponibili sia per clienti privati che per il settore Ho.Re.Ca.</p>
-
-  <h3>Effettuate consegne nei giorni festivi?</h3>
-  <p>Le consegne sono attive dal lunedì al sabato. Per esigenze particolari contattaci e troveremo una soluzione.</p>
-
-  <h3>È possibile acquistare anche online?</h3>
-  <p>Sì! Puoi visitare la nostra enoteca online su <a href="https://enogotti.it" target="_blank">enogotti.it</a>.</p>
-
-  <h3>Avete anche vini sfusi?</h3>
-  <p>Sì, disponiamo di una selezione di vini sfusi e in bottiglia, anche da tavola e locali.</p>
-
-  <h3>Consegnate anche birra in fusto?</h3>
-  <p>Assolutamente sì! Abbiamo birre in fusto per bar, ristoranti ed eventi privati.</p>
+<!-- Versione aggiornata con ID forzato per GitHub Pages refresh -->
+<section id="chi-siamo-popup" style="text-align: center; padding: 40px 20px;">
+  <button onclick="document.getElementById('chiSiamoModal').style.display='block'" 
+          style="padding: 12px 24px; background-color: #7c0f00; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">
+    Chi siamo
+  </button>
 </section>
 
+<div id="chiSiamoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.6); z-index:1000;">
+  <div style="background:white; max-width:600px; margin:10% auto; padding:30px; border-radius:8px; position:relative;">
+    <span onclick="document.getElementById('chiSiamoModal').style.display='none'" 
+          style="position:absolute; top:10px; right:15px; font-size:22px; cursor:pointer;">&times;</span>
+    <h2 style="color:#7c0f00;">Chi siamo</h2>
+    <p><strong>Enogotti Distribuzione è un'azienda di Bergamo specializzata nella fornitura e consegna di bevande per privati, attività e locali.</strong></p>
+    <p>Selezioniamo con cura <strong>acque, bibite, birre in fusto e bottiglia, vini di qualità e sfusi</strong>, offrendo un servizio puntuale e personalizzato.</p>
+    <p>Serviamo tutta la provincia di Bergamo, con consegna a domicilio pensata per semplificare la vita dei nostri clienti.</p>
+    <p>Visita anche la nostra enoteca online <a href="https://enogotti.it" target="_blank">enogotti.it</a>, dove selezioniamo <strong>vini e distillati di alta qualità</strong> da tutta Italia e dal mondo.</p>
+  </div>
+</div>
+
 <footer>
-  <p>⏰ Orari di apertura:<br />
-    Lunedì: 8:00 - 12:00<br />
-    Martedì - Venerdì: 8:00 - 12:00 | 15:00 - 19:00<br />
-    Sabato: 8:30 - 12:00 | 15:00 - 18:00<br /><br />
-    📩 Email: <a href="mailto:info@enogotti.it">info@enogotti.it</a><br />
-    ☎️ Telefono: 0345 982 72<br />
-    📍 Indirizzo: Via Roma 22, Val Brembilla (BG)<br />
-    P.IVA 02231510161
-  </p>
   <p>&copy; 2025 Enogotti Distribuzione. Tutti i diritti riservati.</p>
 </footer>
 </body>
