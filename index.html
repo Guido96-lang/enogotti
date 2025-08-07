@@ -21,7 +21,44 @@
     footer { background-color: #333; color: white; text-align: center; padding: 20px; }
     .highlight-button { display: inline-block; margin-top: 20px; background-color: #a01400; color: white; padding: 15px 25px; font-weight: 600; border-radius: 6px; text-decoration: none; }
     .catalogo-button { display: inline-block; margin-top: 25px; padding: 10px 20px; background-color: #7c0f00; color: #fff; font-weight: 600; text-decoration: none; border-radius: 6px; }
-  </style>
+  
+<style>
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border: 3px solid #f1f1f1;
+    z-index: 9999;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  }
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-container .btn {
+    background-color: #7c0f00;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .form-container .cancel {
+    background-color: #aaa;
+  }
+</style>
+
+</style>
 </head>
 <body>
   <header>
@@ -137,5 +174,38 @@
   <footer>
     <p>&copy; 2025 Enogotti Distribuzione. Tutti i diritti riservati.</p>
   </footer>
+
+<section class="cta">
+  <h2>Richiedi informazioni</h2>
+  <button class="highlight-button" onclick="openForm()">📨 Invia una richiesta</button>
+</section>
+
+
+<div class="form-popup" id="contactForm">
+  <form action="https://formsubmit.co/info@enogotti.it" method="POST" class="form-container">
+    <h3>Contattaci</h3>
+    <input type="hidden" name="_subject" value="Nuova richiesta dal sito Enogotti!">
+    <input type="hidden" name="_captcha" value="false">
+    <label for="name"><b>Nome</b></label>
+    <input type="text" placeholder="Il tuo nome" name="name" required>
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="La tua email" name="email" required>
+    <label for="message"><b>Messaggio</b></label>
+    <textarea placeholder="Scrivi il tuo messaggio..." name="message" rows="4" required></textarea>
+    <button type="submit" class="btn">Invia</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
+  </form>
+</div>
+
+
+<script>
+  function openForm() {
+    document.getElementById("contactForm").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("contactForm").style.display = "none";
+  }
+</script>
+
 </body>
 </html>
